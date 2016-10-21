@@ -5,6 +5,9 @@ import static spark.Spark.*;
  */
 public class HelloWorld {
     public static void main(String[] args) {
-        get("/hello", (req, res) -> "Hello World, azaza!");
+        get("/hello/:name", (req, res) -> {
+            System.out.println("Bazinga!");
+            return String.format("Hello %s!", req.params(":name"));
+        });
     }
 }
