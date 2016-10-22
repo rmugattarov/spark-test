@@ -1,1 +1,8 @@
 <p>$!msg</p>
+<p>
+<ol>
+#foreach($e in $arr)
+<li>$e</li>
+#end
+</ol>
+</p>
