@@ -1,10 +1,1 @@
-<html>
-<body>
 <p>$!msg</p>
-<p>
-<ol>
-#foreach($e in $list)<li>$e</li>#end
-</ol>
-</p>
-</body>
-</html>
