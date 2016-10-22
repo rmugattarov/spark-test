@@ -15,8 +15,6 @@ public class HelloWorld {
     public static void main(String[] args) {
         Map<String, String> model = new HashMap<>();
         model.put("msg", "whaddup");
-        get("/hello", (req, res) -> {
-            return new ModelAndView(model,"template.vm");
-        }, new VelocityTemplateEngine());
+        get("/hello", (req, res) -> new ModelAndView(model, "template.vm"), new VelocityTemplateEngine());
     }
 }
